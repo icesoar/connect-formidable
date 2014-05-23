@@ -19,7 +19,7 @@ var mime = function(req) {
 exports = module.exports = function(options) {
     options = options || {}
 
-    return function connect-formidable(req, res, next) {
+    return function connect_formidable(req, res, next) {
         if (req._body) return next();
         req.body = req.body || {};
         req.files = req.files || {};
